@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { Book, Skull, Heart, Timer, Volume2, VolumeX } from 'lucide-react';
-import { Alert, AlertDescription } from '@/components/ui/alert';
+import { Alert, AlertDescription } from './ui/alert';
 import PageTurn from './animations/PageTurn';
 import Background from './layout/Background';
 import CurseEffects from './animations/CurseEffects';

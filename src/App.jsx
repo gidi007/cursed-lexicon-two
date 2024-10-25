@@ -1,5 +1,5 @@
 import React from 'react';
-import { Toaster } from '@/components/ui/toaster';
+import  Toaster  from './components/ui/toaster';
 import CursedLexicon from './components/CursedLexicon';
 import GameLayout from './components/layout/GameLayout';
 import Background from './components/layout/Background';
