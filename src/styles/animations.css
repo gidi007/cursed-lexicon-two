@@ -1,0 +1,113 @@
+@keyframes sweep {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+  }
+  
+  /* Page turn effect */
+  .page-turn-enter {
+    transform-origin: left;
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  
+  .page-turn-enter-active {
+    transform: rotateY(0deg);
+    opacity: 1;
+    transition: all 500ms;
+  }
+  
+  .page-turn-exit {
+    transform-origin: right;
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  
+  .page-turn-exit-active {
+    transform: rotateY(-90deg);
+    opacity: 0;
+    transition: all 500ms;
+  }
+  
+  /* Curse effects */
+  .curse-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+  
+  .animate-sweep {
+    animation: sweep 2s linear infinite;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+  }
+  
+  .animate-rotate {
+    animation: rotate 10s linear infinite;
+  }
+  
+  .animate-flicker {
+    animation: flicker 0.5s ease-in-out infinite;
+  }
+  
+  .animate-shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  
+  /* Custom cursive font for mystical elements */
+  @font-face {
+    font-family: 'Cursive';
+    src: url('/assets/fonts/mystical-font.woff2') format('woff2');
+  }
+  
+  .font-cursive {
+    font-family: 'Cursive', cursive;
+  }
+  
+  /* Gradient text effect */
+  .text-gradient {
+    background: linear-gradient(45deg, #9333ea, #4f46e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Glowing effect */
+  .glow {
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.5);
+  }
+  
+  .glow:hover {
+    box-shadow: 0 0 30px rgba(147, 51, 234, 0.8);
+  }
